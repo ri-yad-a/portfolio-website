@@ -13,3 +13,13 @@ html {
   background-color: #16001b;
   
 }
+
+.dark-grey {
+  color: #fff !important;
+  background-color: #616161 !important;
+}
+
+.white {
+  color: #000 !important;
+  background-color: #fff !important;
+}

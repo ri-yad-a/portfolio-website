@@ -1,31 +1,36 @@
 import "../../App.css";
-import { StyledNavbarItem } from "../styles/NavbarItem.styled";
+import { StyledNavbarItem }from "../styles/NavbarItem.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faDiagramProject, faToolbox, faUser} from "@fortawesome/free-solid-svg-icons";
+
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-block small hide-small center">
-      <StyledNavbarItem>
+    <nav>
+      <StyledNavbarItem className="navbar-item">
         <a href="#">
-          <FontAwesomeIcon icon={faHouse} />
+          <FontAwesomeIcon icon={faHouse} size="3x" />
+          <p>HOME</p>
         </a>
       </StyledNavbarItem>
 
-      <StyledNavbarItem>
+      <StyledNavbarItem className="navbar-item">
         <a href="#about">
+          <FontAwesomeIcon icon={faUser} size="3x"></FontAwesomeIcon>
           <p>ABOUT ME</p>
         </a>
       </StyledNavbarItem>
 
-      <StyledNavbarItem>
-        <a href="#skills" id="skills">
+      <StyledNavbarItem className="navbar-item">
+        <a href="#skills">
+          <FontAwesomeIcon icon={faToolbox} size="3x"></FontAwesomeIcon>
           <p>SKILLS</p>
         </a>
       </StyledNavbarItem>
 
-      <StyledNavbarItem>
+      <StyledNavbarItem className="navbar-item">
         <a href="#projects">
+          <FontAwesomeIcon icon={faDiagramProject} size="3x"></FontAwesomeIcon>
           <p>PROJECTS</p>
         </a>
       </StyledNavbarItem>
