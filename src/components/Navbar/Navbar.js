@@ -1,30 +1,35 @@
 import "../../App.css";
+import { StyledNavbarItem } from "../styles/NavbarItem.styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-block small hide-small center">
-      <a href="#" className="navbar-item button padding-large black">
-        <i className="fa fa-home xxlarge"></i>
-        <p>HOME</p>
-      </a>
-      <a href="#about" className="navbar-item button padding-large hover-black">
-        <i className="fa fa-user xxlarge"></i>
-        <p>ABOUT ME</p>
-      </a>
-      <a
-        href="#skills"
-        className="navbar-item button padding-large hover-black"
-      >
-        <i className="fa fa-eye xxlarge"></i>
-        <p>SKILLS</p>
-      </a>
-      <a
-        href="#projects"
-        className="navbar-item button padding-large hover-black"
-      >
-        <i className="fa fa-eye xxlarge"></i>
-        <p>PROJECTS</p>
-      </a>
+      <StyledNavbarItem>
+        <a href="#">
+          <FontAwesomeIcon icon={faHouse} />
+        </a>
+      </StyledNavbarItem>
+
+      <StyledNavbarItem>
+        <a href="#about">
+          <p>ABOUT ME</p>
+        </a>
+      </StyledNavbarItem>
+
+      <StyledNavbarItem>
+        <a href="#skills" id="skills">
+          <p>SKILLS</p>
+        </a>
+      </StyledNavbarItem>
+
+      <StyledNavbarItem>
+        <a href="#projects">
+          <p>PROJECTS</p>
+        </a>
+      </StyledNavbarItem>
+
       {/* <a
         href="#contact"
         className="navbar-item button padding-large hover-black"
