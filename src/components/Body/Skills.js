@@ -1,97 +1,40 @@
 import "../../App.css";
+import { StyledSkills } from "../styles/Skills.styled";
 import CircularProgressBar from "./CircularProgressBar";
 
 function Skills() {
   return (
-    <div className="content justify text-grey padding-64" id="skills">
-          <h3 className="padding-16 text-light-grey">
-        My Skills
-      </h3>
-      <p className="wide">Java</p>
-      <CircularProgressBar></CircularProgressBar>
+    <div id="skills">
+      <h3>My Skills</h3>
 
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "75%" }}
-        ></div>
-      </div>
-      <p className="wide">C++</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "65%" }}
-        ></div>
-      </div>
-      <p className="wide">JavaScript</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "60%" }}
-        ></div>
-      </div>
-      <p className="wide">React</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "50%" }}
-        ></div>
-      </div>
-      <p className="wide">Python</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "40%" }}
-        ></div>
-      </div>
-      <p className="wide">Git</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "80%" }}
-        ></div>
-     
-      </div>
+      <StyledSkills>
+        <CircularProgressBar percentage={75} skill="Java" />
 
-      <p className="wide">HTML</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "85%" }}
-        ></div>
-     
-      </div>
+        {/* <div className="white">
+    <div
+      className="dark-grey"
+      style={{ height: "40px", width: "75%" }}
+    ></div>
+  </div> */}
 
-      <p className="wide">CSS</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "40px", width: "75%" }}
-        ></div>
-     
-      </div>
+        <CircularProgressBar percentage={65} skill="C++" />
 
-      
+        <CircularProgressBar percentage={60} skill="Javascript" />
 
-      <br></br>
+        <CircularProgressBar percentage={50} skill="React" />
+
+        <CircularProgressBar percentage={40} skill="Python" />
+
+        <CircularProgressBar percentage={80} skill="Git" />
+
+        <CircularProgressBar percentage={85} skill="HTML" />
+
+        <CircularProgressBar percentage={60} skill="CSS" />
+
+        <br></br>
+      </StyledSkills>
     </div>
   );
 }
 
 export default Skills;
-
-
-// function Skill() {
-//   return(
-//     <>
-//     <p className="wide">Java</p>
-//       <div className="white">
-//         <div
-//           className="dark-grey"
-//           style={{ height: "40px", width: "95%" }}
-//         ></div>
-//       </div>
-//     </>
-    
-//   );
-// }

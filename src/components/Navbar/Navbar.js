@@ -1,25 +1,54 @@
 import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faDiagramProject, faToolbox, faUser} from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faHouse,
+  faDiagramProject,
+  faToolbox,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
     <nav>
-        <a href="#home" className="navbar-item">
-          <FontAwesomeIcon icon={faHouse} size="2x" />
-          <p className="link-text">HOME</p>
-        </a>
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="navbar-item"
+      >
+        <FontAwesomeIcon icon={faHouse} size="2x" />
+        <p className="link-text">HOME</p>
+      </Link>
 
-        <a href="#skills" className="navbar-item">
-          <FontAwesomeIcon icon={faToolbox} size="2x"></FontAwesomeIcon>
-          <p className="link-text">SKILLS</p>
-        </a>
+      {/* <a href="#skills" className="navbar-item"> */}
+      <Link
+        to="skills"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="navbar-item"
+      >
+        <FontAwesomeIcon icon={faToolbox} size="2x"></FontAwesomeIcon>
+        <p className="link-text">SKILLS</p>
+      </Link>
 
-        <a href="#projects" className="navbar-item">
-          <FontAwesomeIcon icon={faDiagramProject} size="2x"></FontAwesomeIcon>
-          <p className="link-text">PROJECTS</p>
-        </a>
+      {/* </a> */}
+
+      <Link
+        to="projects"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="navbar-item"
+      >
+        <FontAwesomeIcon icon={faDiagramProject} size="2x"></FontAwesomeIcon>
+        <p className="link-text">PROJECTS</p>
+      </Link>
 
       {/* <a
         href="#contact"

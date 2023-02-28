@@ -5,7 +5,10 @@ export const StyledProjectItem = styled.div`
 
 width: 50%;
 
-
+.h2 .li .span {
+  display: flex;
+  justify-content: center;
+}
 
 .padding-16 {
   padding-top: 16px !important;

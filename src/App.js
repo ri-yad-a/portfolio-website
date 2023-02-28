@@ -4,14 +4,13 @@ import Skills from "./components/Body/Skills.js";
 import Home from "./components/Body/Home.js";
 import Projects from "./components/Body/Projects.js";
 import { StyledNavBar } from "./components/styles/Navbar.styled";
-import { StyledContainer } from "./components/styles/Container.styled";
 import { StyledContent } from "./components/styles/Content.styled";
 import { StyledContentItem } from "./components/styles/ContentItem.styled";
+//import {Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <StyledContainer>
+    <>
         <StyledNavBar>
           <Navbar />
         </StyledNavBar>
@@ -30,9 +29,9 @@ function App() {
           <StyledContentItem>
             <Projects />
           </StyledContentItem>
+
         </StyledContent>
-      </StyledContainer>
-    </div>
+    </>
   );
 }
 

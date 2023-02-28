@@ -8,7 +8,6 @@ function Home() {
       <StyledGreeting>
         <Greeting/>
       </StyledGreeting>
-      <h2>Introduction</h2>
       <p>
         Welcome to my portfolio website! My name is Riyad and I am a computer
         science major with a passion for software development. As a computer
@@ -45,8 +44,7 @@ function Greeting() {
   return (
     <StyledGreeting>
       <div className="typewriter">
-        <h1>I'm Riyad Abdullayev </h1>
-        <p>Software Developer and Computer Science Student</p>
+        <h1>Hi, I'm Riyad Abdullayev </h1>
       </div>
     </StyledGreeting>
   );
