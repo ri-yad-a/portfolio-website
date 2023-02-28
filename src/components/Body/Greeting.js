@@ -1,13 +1,14 @@
 import "../../App.css";
+import { StyledGreeting } from "../styles/Greeting.styled";
 
 function Greeting() {
   return (
-    <header class="container padding-32 center black" id="home">
-      <h1 class="jumbo">
-        <span class="hide-small">I'm</span> Riyad Abdullayev
-      </h1>
-      <p>Software Developer and Computer Science Student</p>
-    </header>
+    <StyledGreeting>
+      <div id="home" className="typewriter">
+        <h1>I'm Riyad Abdullayev </h1>
+        <p>Software Developer and Computer Science Student</p>
+      </div>
+    </StyledGreeting>
   );
 }
 

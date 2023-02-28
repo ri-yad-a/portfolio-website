@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
 
 html {
-  font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 auto;
@@ -20,3 +23,6 @@ html {
   color: #000 !important;
   background-color: #fff !important;
 }
+
+
+

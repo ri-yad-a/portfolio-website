@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContentItem = styled.div`
 
-    
-    border-style: solid;
+    margin: 50px 0;
+   
 
 `

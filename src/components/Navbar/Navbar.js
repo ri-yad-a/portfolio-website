@@ -6,15 +6,9 @@ import { faHouse, faDiagramProject, faToolbox, faUser} from "@fortawesome/free-s
 function Navbar() {
   return (
     <nav>
-        <a href="#" className="navbar-item">
+        <a href="#home" className="navbar-item">
           <FontAwesomeIcon icon={faHouse} size="2x" />
           <p className="link-text">HOME</p>
-        </a>
-      
-
-        <a href="#about" className="navbar-item">
-          <FontAwesomeIcon icon={faUser} size="2x"></FontAwesomeIcon>
-          <p className="link-text">ABOUT ME</p>
         </a>
 
         <a href="#skills" className="navbar-item">
