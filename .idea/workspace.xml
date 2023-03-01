@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83146712-861d-43d0-9995-7d7a1c1e7a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/CircularProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/CircularProgressBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Greeting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/Greeting.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/Greeting.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/Navbar.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/Navbar.styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles/Skills.styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/Skills.styled.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2MNU1Seb3wEobHGxZaNjG9PiGc0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1677607323072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677607323072</updated>
+    </task>
+    <servers />
+  </component>
+</project>

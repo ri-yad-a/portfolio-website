@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledNavBar = styled.div`
 
-background-color: #373737;
+/* background-color: purple; */
 
   @media only screen and (max-width: 600px) {
 
@@ -27,7 +27,7 @@ background-color: #373737;
   }
 
   a {
-    color: yellow;
+    color: #66fcf1;
     text-decoration: none;
   }
 
@@ -42,5 +42,9 @@ background-color: #373737;
 
   .navbar-item:hover .link-text {
     display: block;
+  }
+
+  .p {
+    color: grey !important;
   }
 `;

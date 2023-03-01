@@ -4,7 +4,7 @@ export const StyledGreeting = styled.div`
 
 display: flex;
 justify-content: center;
-color: yellow;
+color: #66fcf1;
 
   .typewriter h1 {
     font-size: 50px;
@@ -40,7 +40,7 @@ color: yellow;
       border-color: transparent;
     }
     50% {
-      border-color: orange;
+      border-color: grey;
     }
   }
 `;

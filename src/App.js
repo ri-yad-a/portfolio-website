@@ -6,31 +6,32 @@ import Projects from "./components/Body/Projects.js";
 import { StyledNavBar } from "./components/styles/Navbar.styled";
 import { StyledContent } from "./components/styles/Content.styled";
 import { StyledContentItem } from "./components/styles/ContentItem.styled";
+import Contact from "./components/Body/Contact";
 //import {Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <>
-        <StyledNavBar>
-          <Navbar />
-        </StyledNavBar>
+      <StyledNavBar>
+        <Navbar />
+      </StyledNavBar>
 
-        <StyledContent>
-         
+      <StyledContent>
+        <Home />
 
-          <StyledContentItem>
-            <Home />
-          </StyledContentItem>
+        <StyledContentItem>
+          <Skills />
+        </StyledContentItem>
 
-          <StyledContentItem>
-            <Skills />
-          </StyledContentItem>
+        <StyledContentItem>
+          <Projects />
+        </StyledContentItem>
 
-          <StyledContentItem>
-            <Projects />
-          </StyledContentItem>
+        <StyledContentItem>
+          <Contact/>
+        </StyledContentItem>
 
-        </StyledContent>
+      </StyledContent>
     </>
   );
 }
