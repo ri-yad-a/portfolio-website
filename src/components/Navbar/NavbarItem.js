@@ -4,16 +4,16 @@ import { Link } from "react-scroll";
 
 function NavbarItem(props) {
     return(
-        <Link
+        <Link 
         to={props.to}
         spy={true}
         smooth={true}
         offset={50}
         duration={700}
-        className="navbar-item"
+        className="nav-link"
       >
         <FontAwesomeIcon icon={props.icon} size="2x" />
-        <p className="link-text">{props.text}</p>
+        <span className="link-text">{props.text}</span>
       </Link>
     );
 }

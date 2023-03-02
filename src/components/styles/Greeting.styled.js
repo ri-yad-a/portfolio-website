@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const StyledGreeting = styled.div`
 
-display: flex;
-justify-content: center;
+max-width: 700px;
+margin: 0 auto;
 color: #66fcf1;
+
 
   .typewriter h1 {
     font-size: 50px;

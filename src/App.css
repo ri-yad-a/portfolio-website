@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 
+:root {
+  font-size: 16px;
+}
+
 * {
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
@@ -11,14 +15,7 @@ html {
   padding: 0 auto;
   color: #dfdfdf;
   background-color: #0b0c10;
-  
 }
-
-
-
-
-
-
 
 
 
@@ -27,7 +24,7 @@ html {
  * All of the styles in this file are configurable!
  */
 
- .CircularProgressbar {
+.CircularProgressbar {
   /*
    * This fixes an issue where the CircularProgressbar svg has
    * 0 width inside a "display: flex" container, and thus not visible.
@@ -72,7 +69,8 @@ html {
  *     percentage={50}
  *   />
  */
-.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+.CircularProgressbar.CircularProgressbar-inverted
+  .CircularProgressbar-background {
   fill: #66fcf1;
 }
 
@@ -87,5 +85,3 @@ html {
 .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
   stroke: transparent;
 }
-
-

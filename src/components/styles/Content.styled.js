@@ -5,4 +5,13 @@ export const StyledContent = styled.div`
   flex-direction: column;
   margin-left: 14rem;
   margin-right: 7rem;
+
+  /* Smaller Screens */
+  @media (max-width: 600px) {
+  
+    margin-left: 7rem;
+
+  }
+
+
 `;

@@ -6,19 +6,41 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import NavbarItem from "./NavbarItem";
+import { StyledNavBar } from "../styles/Navbar.styled";
 
 function Navbar() {
   return (
-    <nav>
-      <NavbarItem icon={faHouse} to="home" text="HOME"></NavbarItem>
+    <StyledNavBar>
+      <nav className="navbar">
+        <ul className="navbar-nav">
+          <li className="navbar-item">
+            <NavbarItem icon={faHouse} to="home" text="HOME"></NavbarItem>
+          </li>
 
-      <NavbarItem icon={faToolbox} to="skills" text="SKILLS"></NavbarItem>
+          <li className="navbar-item">
+            <NavbarItem icon={faToolbox} to="skills" text="SKILLS"></NavbarItem>
+          </li>
 
-      <NavbarItem icon={faDiagramProject} to="projects" text="PROJECTS"></NavbarItem>
+          <li className="navbar-item">
+            <NavbarItem
+              icon={faDiagramProject}
+              to="projects"
+              text="PROJECTS"
+            ></NavbarItem>
+          </li>
 
-      <NavbarItem icon={faEnvelope} to="contact" text="CONTACT"></NavbarItem>
-    </nav>
+          <li className="navbar-item">
+            <NavbarItem
+              icon={faEnvelope}
+              to="contact"
+              text="CONTACT"
+            ></NavbarItem>
+          </li>
+        </ul>
+      </nav>
+    </StyledNavBar>
   );
 }
 
 export default Navbar;
+

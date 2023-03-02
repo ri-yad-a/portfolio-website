@@ -1,50 +1,92 @@
 import styled from "styled-components";
 
 export const StyledNavBar = styled.div`
+ 
+/* Navbar stuff */
 
-/* background-color: purple; */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  /* background-color: grey; */
+}
 
-  @media only screen and (max-width: 600px) {
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  
-  }
+.nav-item {
+  width: 100%;
+}
 
-  @media only screen and (min-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    padding: 10% 0;
-    position: fixed;
-    width: 7rem;
-    height: 100vh;
+.nav-item:hover {
+  width: 100%;
+}
 
-    .navbar-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 35px 0;
-    }
-  }
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  text-decoration: none;
+  color: #66fcf1;
+  filter: opacity(0.8);
+  transition: filter 300ms ease;
+}
 
-  a {
-    color: #66fcf1;
-    text-decoration: none;
-  }
+.nav-link:hover {
+  filter: opacity(1);
+}
 
-  a:hover {
+.link-text {
+  margin: 1rem 0;
+  font-size: 0rem;
+  transition: font-size 300ms ease;
+}
+
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
     background-color: black;
   }
 
-  .link-text {
-    font-size: 15px;
-    display: none;
+  .navbar-nav {
+    margin-top: 2rem;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
-  .navbar-item:hover .link-text {
-    display: block;
+  .nav-link {
+    /* justify-content: center;
+    align-items: center; */
   }
 
-  .p {
-    color: grey !important;
+}
+
+/* Large Screens */
+@media (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 7rem;
+    height: 100vh;
   }
+  .nav-link:hover .link-text {
+    /* display: block; */
+    font-size: 0.7em;
+  }
+}
 `;

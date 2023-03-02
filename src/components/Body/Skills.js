@@ -26,6 +26,8 @@ function Skills() {
 
         <br></br>
       </StyledSkills>
+      <button>Download My Resume here</button>
+
     </div>
   );
 }
