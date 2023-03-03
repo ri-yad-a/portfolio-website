@@ -1,5 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import '../../App.css';
 
 function CircularProgressBar(props) {
@@ -13,7 +14,9 @@ function CircularProgressBar(props) {
     <div style={{margin: '5% 5%'}}>
         <p style={{display:'flex', justifyContent:'center'}}>{props.skill}</p>
       <div style={{ width: 150}}>
-        <CircularProgressbar value={percentage} text={`${percentage}%`} />
+        <CircularProgressbarWithChildren value={percentage}>
+          <FontAwesomeIcon icon={props.skillIcon} size="3x" style={{color: "var(--accent-primary)"}}></FontAwesomeIcon>
+        </CircularProgressbarWithChildren>
       </div>
     </div>
   );

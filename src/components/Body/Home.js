@@ -1,32 +1,35 @@
 import "../../App.css";
-import { StyledGreeting } from "../styles/Greeting.styled";
+import { StyledHome } from "../styles/Home.styled";
+import Socials from "./Socials";
 
 function Home() {
   return (
-    <div id="home" style={{ fontSize: "20px", minHeight:'100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-   
-        <Greeting />
-      
+    <div  id="home">
+<StyledHome>
+      <h1>
+        Hi, I'm Riyad Abdullayev
+      </h1>
       <p>
-        Welcome to my portfolio website! I
-        am a 2nd year Computer Science major at the University of Calgary with a strong passion for software
+        Welcome to my portfolio website! I am a 2nd year Computer Science major
+        at the University of Calgary with a strong passion for software
         development. Here, you can browse my projects and learn more about my
         skills and experience. Thank you for visiting!
       </p>
 
-      
-    </div>
-  );
-}
+      {/* this is for typewriter animation
+       <StyledGreeting>
+        <div className="typewriter">
+          <h1></h1>
+        </div>
+  </StyledGreeting> */}
+    <Socials/>
 
-function Greeting() {
-  return (
-    <StyledGreeting>
-      <div className="typewriter">
-        <h1>Hi, I'm Riyad Abdullayev </h1>
-      </div>
-    </StyledGreeting>
+    </StyledHome>
+    </div>
+    
   );
 }
 
 export default Home;
+
+

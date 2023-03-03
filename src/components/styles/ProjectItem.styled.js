@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledProjectItem = styled.div`
  
-background-color: grey;
+background-color: var(--background-secondary);
 width: 40%;
 border-style: transparent;
 border-radius: 20px;

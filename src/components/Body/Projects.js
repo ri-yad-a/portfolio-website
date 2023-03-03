@@ -1,12 +1,11 @@
 import "../../App.css";
-import { StyledProjectItem } from "../styles/ProjectItem.styled";
 import { StyledProjects } from "../styles/Projects.styled";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
   return (
-    <div style={{height:'100vh'}}>
-      <StyledProjects id="projects">
+    <div id="projects" style={{mihHeight: '100vh'}}>
+      <StyledProjects>
         <ProjectItem
           name="Locationary"
           description="Java Desktop Application for Travellers"

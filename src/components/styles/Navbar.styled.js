@@ -9,7 +9,7 @@ export const StyledNavBar = styled.div`
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  /* background-color: grey; */
+  /* background-color: var(--background-secondary); */
 }
 
 .navbar-nav {
@@ -37,8 +37,8 @@ export const StyledNavBar = styled.div`
   align-items: center;
   height: 7rem;
   text-decoration: none;
-  color: #66fcf1;
-  filter: opacity(0.8);
+  color: var(--accent-primary);
+  filter: opacity(0.7);
   transition: filter 300ms ease;
 }
 
@@ -59,7 +59,7 @@ export const StyledNavBar = styled.div`
     bottom: 0;
     width: 100vw;
     height: 5rem;
-    background-color: black;
+    background-color: var(--background-secondary);
   }
 
   .navbar-nav {
