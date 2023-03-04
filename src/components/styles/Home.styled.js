@@ -1,10 +1,34 @@
 import styled from "styled-components";
 
+
+
 export const StyledHome = styled.div`
+
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+.home-frame {
+  padding: 5rem 2rem;
+  border-top-style: solid;
+  border-top-color: var(--text-primary);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-style: solid;
+  border-bottom-color: var(--text-primary);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+}
+
+.tagline {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
 
   /* Smaller screens */
   @media (max-width: 600px) {
@@ -72,4 +96,5 @@ export const StyledHome = styled.div`
       border-color: grey;
     }
   }
+  
 `;

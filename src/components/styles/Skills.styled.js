@@ -2,12 +2,19 @@ import styled from "styled-components";
 
 export const StyledSkills = styled.div`
   min-height: 100vh;
+  margin-bottom: 10rem;
 
   .header {
     font-size: 2rem;
   }
 
   .progress-bars {
+    /* border-left-style: solid;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right-style: solid;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

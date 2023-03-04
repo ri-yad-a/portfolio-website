@@ -13,13 +13,13 @@ function App() {
       <Navbar />
 
       <StyledContent>
-        <Home/>
+        <Home className="content-item"/>
 
-        <Skills/>
+        <Skills className="content-item"/>
 
-        <Projects/>
+        <Projects className="content-item"/>
 
-        <Contact/>
+        <Contact className="content-item"/>
       </StyledContent>
     </>
   );

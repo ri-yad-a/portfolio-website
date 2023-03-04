@@ -4,11 +4,13 @@ import Socials from "./Socials";
 
 function Home() {
   return (
-    <div  id="home">
-<StyledHome>
-      <h1>
+
+<StyledHome id="home">
+  <div className="home-frame">
+  <h1>
         Hi, I'm Riyad Abdullayev
       </h1>
+      <h2 className="tagline">Software Devloper and Computer Science student</h2>
       <p>
         Welcome to my portfolio website! I am a 2nd year Computer Science major
         at the University of Calgary with a strong passion for software
@@ -23,9 +25,11 @@ function Home() {
         </div>
   </StyledGreeting> */}
     <Socials/>
+  </div>
+     
 
     </StyledHome>
-    </div>
+ 
     
   );
 }
