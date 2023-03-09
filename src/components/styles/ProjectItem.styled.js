@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledProjectItem = styled.div`
+  
+ 
+  
   min-width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -8,6 +11,16 @@ export const StyledProjectItem = styled.div`
   border-radius: 3rem;
   padding: 3rem 0;
   background-color: var(--background-secondary);
+  transition: box-shadow 300ms ease;
+
+
+  :hover {
+    box-shadow: 0 10px 20px var(--accent-primary);
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 
   .project {
     display: flex;
@@ -16,6 +29,7 @@ export const StyledProjectItem = styled.div`
     align-items: center;
     width: 40%;
   }
+  
 
   .summary {
     width: 40%;
@@ -43,7 +57,7 @@ export const StyledProjectItem = styled.div`
   .project-link:hover {
     filter: opacity(1);
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px var(--text-primary);
+    box-shadow: 0 2px 10px var(--text-primary);
   }
 
   .project-link:active {

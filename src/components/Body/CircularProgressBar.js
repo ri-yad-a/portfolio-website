@@ -13,11 +13,12 @@ function CircularProgressBar(props) {
   return (
     <div style={{margin: '5% 5%'}}>
         <p style={{display:'flex', justifyContent:'center'}}>{props.skill}</p>
-      <div style={{ width: 150}}>
+      <div className="progress-bar-sizing" style={{ width: 150}}>
         <CircularProgressbarWithChildren value={percentage}>
           <FontAwesomeIcon icon={props.skillIcon} size="3x" style={{color: "var(--accent-primary)"}}></FontAwesomeIcon>
         </CircularProgressbarWithChildren>
       </div>
+
     </div>
   );
 }

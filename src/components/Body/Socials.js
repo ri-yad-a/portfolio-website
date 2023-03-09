@@ -1,7 +1,6 @@
 import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDiscord,
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
@@ -21,6 +20,7 @@ function Socials() {
           <a
             href="https://www.linkedin.com/in/riyad-abdullayev-79b29b239/"
             target="_blank"
+            rel="noreferrer"
             className="socials-link"
           >
             <FontAwesomeIcon
@@ -35,6 +35,7 @@ function Socials() {
           <a
             href="https://github.com/ri-yad-a"
             target="_blank"
+            rel="noreferrer"
             className="socials-link"
           >
             <FontAwesomeIcon

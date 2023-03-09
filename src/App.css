@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
-@import url('https://fonts.cdnfonts.com/css/ink-free');
+@import url("https://fonts.cdnfonts.com/css/ink-free");
 
 :root {
-  font-size: 16px;
-  --accent-primary: #50D8D7;
+  
+  --accent-primary: #50d8d7;
   --accent-secondary: #45a29e;
   --text-primary: #e7e4d2;
   --text-secondary: #303030;
@@ -11,6 +11,25 @@
   --background-primary: #242b2c;
   --background-secondary: #191b1b;
 }
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
 
 * {
   font-family: "Ubuntu", sans-serif;
@@ -23,6 +42,14 @@ html {
   padding: 0 auto;
   background-color: var(--background-primary);
   color: var(--text-primary);
+}
+
+.content-item {
+  margin-bottom: 10rem;
+}
+
+.section-header {
+  font-size: 2rem;
 }
 
 

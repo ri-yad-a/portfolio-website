@@ -14,10 +14,10 @@ import resume from "../../images/resume.pdf";
 
 function Skills() {
   return (
-    <StyledSkills id="skills">
-      <h3 className="header">My Skills</h3>
+    <StyledSkills id="skills" className="content-item hidden">
+      <h3 className="section-header" data-aos="fade-left">My Skills</h3>
 
-      <div className="progress-bars">
+      <div className="progress-bars" data-aos="fade-left" data-aos-delay="300">
         <CircularProgressBar percentage={75} skill="Java" skillIcon={faJava} />
 
         {/* <CircularProgressBar percentage={65} skill="C++" /> */}
@@ -27,8 +27,6 @@ function Skills() {
           skill="Python"
           skillIcon={faPython}
         />
-
-        <CircularProgressBar percentage={80} skill="Git" skillIcon={faGitAlt} />
 
         <CircularProgressBar percentage={70} skill="HTML" skillIcon={faHtml5} />
 
@@ -45,10 +43,15 @@ function Skills() {
           skill="React"
           skillIcon={faReact}
         />
-      </div>
 
-      <br></br>
-      <a href={resume} download="Resume (Riyad A.)" className="resume-link">
+        <CircularProgressBar percentage={80} skill="Git" skillIcon={faGitAlt} />
+      </div>
+      <a
+        href={resume}
+        rel="noreferrer"
+        download="Resume (Riyad A.)"
+        className="resume-link"
+      >
         Download My Resume Here
       </a>
     </StyledSkills>

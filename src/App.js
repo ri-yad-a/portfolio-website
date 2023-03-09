@@ -5,9 +5,9 @@ import Home from "./components/Body/Home.js";
 import Projects from "./components/Body/Projects.js";
 import { StyledContent } from "./components/styles/Content.styled";
 import Contact from "./components/Body/Contact";
-//import {Routes, Route} from 'react-router-dom'
 
 function App() {
+
   return (
     <>
       <Navbar />
