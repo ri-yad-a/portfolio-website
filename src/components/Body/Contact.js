@@ -18,8 +18,7 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("Message Sent!");
+          alert("Message Sent Successfully!");
         },
         (error) => {
           console.log(error.text);
