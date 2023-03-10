@@ -11,11 +11,12 @@ export const StyledProjectItem = styled.div`
   border-radius: 3rem;
   padding: 3rem 0;
   background-color: var(--background-secondary);
-  transition: box-shadow 300ms ease;
+  transition: transform 300ms ease, box-shadow 500ms ease;
 
 
   :hover {
-    box-shadow: 0 10px 20px var(--accent-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--accent-primary);
   }
 
   @media (max-width: 1000px) {
@@ -57,7 +58,7 @@ export const StyledProjectItem = styled.div`
   .project-link:hover {
     filter: opacity(1);
     transform: translateY(-2px);
-    box-shadow: 0 2px 10px var(--text-primary);
+    /* box-shadow: 0 2px 10px var(--text-primary); */
   }
 
   .project-link:active {
