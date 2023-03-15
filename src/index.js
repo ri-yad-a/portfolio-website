@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// require('dotenv').config();
+// console.log(process.env);
 
 root.render(
   <React.StrictMode>

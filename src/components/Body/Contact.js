@@ -6,15 +6,15 @@ import { StyledContact } from "../styles/Contact.styled.js";
 function Contact() {
   const form = useRef();
 
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        "service_q7dw814",
-        "template_k9u1918",
+        `${process.env.REACT_APP_SERVICE_ID}`,
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
         form.current,
-        "PHkkRQHLj3ShQ7FUu"
+        `${process.env.REACT_APP_API_KEY}`
       )
       .then(
         (result) => {

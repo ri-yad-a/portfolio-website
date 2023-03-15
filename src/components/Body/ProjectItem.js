@@ -11,7 +11,7 @@ function ProjectItem(props) {
           <p className="project-description">{props.description}</p>
           <a href={props.repoLink} target="_blank" rel="noreferrer" className="project-link">View Github Repository</a>
         </div>
-        <p className="summary">{props.summary}</p>
+        <p className="project-summary">{props.summary}</p>
        
       </StyledProjectItem>
     );

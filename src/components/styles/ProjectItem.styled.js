@@ -32,7 +32,7 @@ export const StyledProjectItem = styled.div`
   }
   
 
-  .summary {
+  .project-summary {
     width: 40%;
   }
 
@@ -43,6 +43,7 @@ export const StyledProjectItem = styled.div`
   }
 
   .project-description {
+    
   }
 
   .project-link {

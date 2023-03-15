@@ -7,10 +7,7 @@ const particlesConfig = {
     fpsLimit: 60,
     interactivity: {
         events: {
-            onClick: {
-                enable: true,
-                mode: "push",
-            },
+            
             onHover: {
                 enable: true,
                 mode: "repulse",
@@ -66,7 +63,7 @@ const particlesConfig = {
                 enable: true,
                 area: 800,
             },
-            value: 10,
+            value: 20,
         },
         opacity: {
             value: 0.5,
