@@ -26,12 +26,12 @@ function App() {
 
   return (
     <>
-      <Particles
+      {/* <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={particlesConfig}
-        />
+        /> */}
       <Navbar />
 
       <StyledContent>

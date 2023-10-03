@@ -7,44 +7,59 @@ export const StyledHome = styled.div`
   justify-content: center;
 
   .home-frame {
-    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem 1rem; */
     border-radius: 5rem;
-    background-color: var(--background-secondary);
-    transition: transform 300ms ease, box-shadow 500ms ease;
+    /* background-color: var(--background-secondary); */
+    /* transition: transform 300ms ease, box-shadow 500ms ease; */
   }
 
   .home-frame:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px var(--accent-primary);
-  
+    /* transform: translateY(-1px); */
+    /* box-shadow: 0 8px 10px var(--accent-primary); */
   }
 
   .tagline {
     text-align: center;
     font-family: "Courier New", Courier, monospace;
     font-size: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     color: var(--text-primary);
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 
   /* Smaller screens */
   @media (max-width: 600px) {
     h1 {
-      font-size: 3rem !important;
+      font-size: 3rem;
     }
 
     p {
-      font-size: 1rem !important;
+      font-size: 1.5rem;
+      text-align: center;
     }
   }
   /* Larger screens */
   @media (min-width: 600px) {
     h1 {
-      font-size: 4rem !important;
+      font-size: 4rem;
     }
 
     p {
-      font-size: 1.5rem !important;
+      font-size: 1.5rem;
+    }
+ 
+  }
+
+  @media (min-width: 1400px) {
+    .home-frame {
+      padding: 15rem 15rem;
     }
   }
 
@@ -67,8 +82,8 @@ export const StyledHome = styled.div`
 
   p {
     color: var(--text-primary);
-    padding: 0 5rem;
-    text-align: center;
+    /* padding: 0 5rem; */
+    /* text-align: center; */
   }
 
   
@@ -77,36 +92,3 @@ export const StyledHome = styled.div`
 
 
 
-
-
-
-// .typing {
-//   font-size: 50px;
-//   overflow: hidden; /* Ensures the content is not revealed until the animation */
-//   /* border-right: 0.15em solid orange;  */
-//   white-space: nowrap; /* Keeps the content on a single line */
-//   margin: 30px auto; /* Gives that scrolling effect as the typing happens */
-//   letter-spacing: 0; /* Adjust as needed */
-//   animation: typing 5s steps(40, end);
-// }
-
-// /* The typing effect */
-// @keyframes typing {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 100%;
-//   }
-// }
-
-// /* The typewriter cursor effect */
-// @keyframes blink-caret {
-//   from,
-//   to {
-//     border-color: transparent;
-//   }
-//   50% {
-//     border-color: grey;
-//   }
-// }

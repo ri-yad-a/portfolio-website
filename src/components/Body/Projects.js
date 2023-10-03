@@ -12,10 +12,21 @@ function Projects() {
   const portfolioSummary = "What you are currently viewing is my portfolio website built with React.js";
   const portfolioLink = "https://github.com/ri-yad-a/portfolio-website";
 
+  const clickatsSummary = "Click Acounting & Tax Services Website"
+  const clickatsLink = "https://www.clickats.com"
+
   return (
     <StyledProjects id="projects" className="content-item">
       <h2 className="section-header">Projects</h2>
       <div className="project-items snaps-inline">
+      <ProjectItem
+          name="Click Accounting & Tax Services"
+          description="Website for a local accounting business"
+          summary={clickatsSummary}
+          repo={true}
+          repoLink={clickatsLink}
+        ></ProjectItem>
+        
         <ProjectItem
           name="Locationary"
           description={"Java Desktop Application for Travellers"}

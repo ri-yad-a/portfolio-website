@@ -11,16 +11,17 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import resume from "../../images/resume.pdf";
+import CPPIcon from "../../images/svg/CPPIcon";
 
 function Skills() {
   return (
     <StyledSkills id="skills" className="content-item hidden">
-      <h3 className="section-header" data-aos="fade-left">
+      <h3 className="section-header">
         My Skills
       </h3>
 
-      <div className="progress-bars" data-aos="fade-left" data-aos-delay="300">
-        <CircularProgressBar percentage={75} skill="Java" icon={true} skillIcon={faJava} />
+      <div className="progress-bars">
+        <CircularProgressBar className="bar" percentage={75} skill="Java" icon={true} skillIcon={faJava} />
 
         {/* <CircularProgressBar percentage={65} skill="C++" /> */}
 
@@ -51,7 +52,7 @@ function Skills() {
 
         <CircularProgressBar percentage={80} skill="Git" icon={true} skillIcon={faGitAlt} />
 
-        <CircularProgressBar percentage={60} skill="C++" icon={false} />
+        <CircularProgressBar percentage={60} skill="C++" icon={true} skillIcon={<CPPIcon/>} />
 
       </div>
       <a

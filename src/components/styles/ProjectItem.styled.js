@@ -4,36 +4,45 @@ export const StyledProjectItem = styled.div`
   
  
   
-  min-width: 100%;
+  max-width: 33%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 3rem;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   background-color: var(--background-secondary);
-  transition: transform 300ms ease, box-shadow 500ms ease;
+  transition: all 300ms ease, box-shadow 500ms ease;
 
-
-  :hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px var(--accent-primary);
-  }
 
   @media (max-width: 1000px) {
-    flex-direction: column;
+    max-width: 80%;
   }
+
+  
+
+  :hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 5px 5px var(--accent-primary); */
+    background-color: black;
+
+  }
+  
+  /* @media (max-width: 1000px) {
+    flex-direction: column;
+  } */
 
   .project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    /* width: 40%; */
   }
   
 
   .project-summary {
-    width: 40%;
+    /* width: 40%; */
   }
 
   .project-preview {

@@ -8,12 +8,14 @@ export const StyledContent = styled.div`
   margin-left: 14rem;
   margin-right: 7rem;
 
+
   
 
   /* Smaller Screens */
   @media (max-width: 600px) {
   
-    margin-left: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
   }
 

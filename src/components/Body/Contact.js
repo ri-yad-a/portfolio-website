@@ -27,7 +27,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="last-content-item">
+    <div id="contact" className="last-content-item" style={{marginBottom: '75px'}}>
       <h2 className="section-header">Contact Me</h2>
       <StyledContact className="">
         <form ref={form} onSubmit={sendEmail} className="contact-form">

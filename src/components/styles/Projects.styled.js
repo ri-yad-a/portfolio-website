@@ -8,11 +8,16 @@ min-height: 100vh;
 .project-items {
 margin: 5em 0;
 display: flex;
-flex-direction: column;
+/* flex-direction: column; */
 align-items: center;
 justify-content: center;
+flex-wrap: wrap;
 gap: 5rem;
 
+}
+
+.project-items > * {
+    flex: 1 1 50%;
 }
 
 .project-scroller {

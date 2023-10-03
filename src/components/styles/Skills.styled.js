@@ -3,15 +3,30 @@ import styled from "styled-components";
 export const StyledSkills = styled.div`
   min-height: 100vh;
 
-  .header {
+  .section-header {
     font-size: 2rem;
+    margin-bottom: 5rem;
   }
 
   .progress-bars {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 5rem;
   }
+
+  @media (min-width: 1200px) {
+    .progress-bars {
+      /* margin: 0 30%; */
+    }
+  }
+
+    /* @media (min-width: 1600px) {
+    .progress-bars {
+      margin: 0 200px;
+    }
+  }
+ */
 
   /* .resume-link {
     text-decoration: none;
@@ -35,7 +50,7 @@ export const StyledSkills = styled.div`
     transition: all 200ms;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 0;
     &:after {
       content: "";
       position: absolute;

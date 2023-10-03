@@ -1,9 +1,7 @@
 import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faInbox } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 function Socials() {
@@ -45,6 +43,16 @@ function Socials() {
             ></FontAwesomeIcon>
           </a>
         </li>
+
+        <li className="socials-item">
+          <a href="mailto:riyadabdullayev04@gmail.com" target="_blank">
+            <FontAwesomeIcon
+              icon={faInbox}
+              size="2x"
+              className="icon"
+            ></FontAwesomeIcon>
+          </a>
+        </li>
       </ul>
     </StyledSocials>
   );
@@ -55,6 +63,7 @@ export default Socials;
 const StyledSocials = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 
   /* Smaller screens */
   @media (max-width: 600px) {
@@ -63,7 +72,7 @@ const StyledSocials = styled.div`
   .socials-soc {
     display: flex;
     list-style: none;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .icon {
