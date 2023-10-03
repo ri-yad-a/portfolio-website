@@ -11,7 +11,7 @@ export const StyledHome = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 1rem 1rem; */
+    /* padding: 2rem 2rem; */
     border-radius: 5rem;
     /* background-color: var(--background-secondary); */
     /* transition: transform 300ms ease, box-shadow 500ms ease; */
@@ -59,7 +59,7 @@ export const StyledHome = styled.div`
 
   @media (min-width: 1400px) {
     .home-frame {
-      padding: 15rem 15rem;
+      /* padding: 10rem 10rem; */
     }
   }
 
